@@ -8,5 +8,6 @@ namespace NumericPrecisionLib
 {
     public class NumericPrecision
     {
+        // Genesis
     }
 }
