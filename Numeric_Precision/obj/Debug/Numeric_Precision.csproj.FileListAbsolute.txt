@@ -1,1 +1,9 @@
 E:\GitProjects\Numeric_Precision\Numeric_Precision\bin\Debug\Numeric_Precision.exe.config
+E:\Documents\Numeric_Precision\Numeric_Precision\bin\Debug\Numeric_Precision.exe.config
+E:\Documents\Numeric_Precision\Numeric_Precision\bin\Debug\Numeric_Precision.exe
+E:\Documents\Numeric_Precision\Numeric_Precision\bin\Debug\Numeric_Precision.pdb
+E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.csprojResolveAssemblyReference.cache
+E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.Properties.Resources.resources
+E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.csproj.GenerateResource.Cache
+E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.exe
+E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.pdb

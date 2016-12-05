@@ -11,16 +11,16 @@ namespace NumericPrecisionLib
     {
         #region ELEMENTARY OPERATIONS
 
-        public BigInteger internalNum1;
-        public BigInteger internalNum2;
+        BigInteger internalNum1;
+        BigInteger internalNum2;
 
-        public int num1DecimalPlace = 0;
-        public int num2DecimalPlace = 0;
-        public int greaterDecimalPlace = 0;
-        public int productDecimalPlace = 0;
+        int num1DecimalPlace = 0;
+        int num2DecimalPlace = 0;
+        int greaterDecimalPlace = 0;
+        int productDecimalPlace = 0;
 
-        public bool isNum1Decimal, isNum1Integer;
-        public bool isNum2Decimal, isNum2Integer;
+        bool isNum1Decimal, isNum1Integer;
+        bool isNum2Decimal, isNum2Integer;
 
         public string Addition(string number1, string number2)
         {
@@ -136,14 +136,14 @@ namespace NumericPrecisionLib
             return localResult;
         }
 
-        public void ParseInputs(string number1, string number2)
+        private void ParseInputs(string number1, string number2)
         {
             ValidateStrings(number1, number2);
             DetermineDecimalPlaces(number1, number2);
             PadShorterDecimal(number1, number2);
         }
 
-        public void ValidateStrings(string value1, string value2)
+        private void ValidateStrings(string value1, string value2)
         {
             isNum1Decimal = IsDecimal(value1);
             isNum1Integer = IsInteger(value1);
@@ -152,7 +152,7 @@ namespace NumericPrecisionLib
             isNum2Integer = IsInteger(value2);
         }
 
-        public void DetermineDecimalPlaces(string number1, string number2)
+        private void DetermineDecimalPlaces(string number1, string number2)
         {
             if (isNum1Decimal == true && isNum1Integer == false)
                 num1DecimalPlace = number1.Length - (number1.IndexOf('.') + 1);
@@ -170,7 +170,7 @@ namespace NumericPrecisionLib
             productDecimalPlace = 2 * greaterDecimalPlace;
         }
 
-        public void PadShorterDecimal(string number1, string number2)
+        private void PadShorterDecimal(string number1, string number2)
         {
             string localNumber1 = number1;
             string localNumber2 = number2;
@@ -205,12 +205,12 @@ namespace NumericPrecisionLib
 
         #region SQUARE-ROOT OPERATIONS
 
-        public BigInteger internalSquareNum;
-        public int squareDecimalPlace = 0;
-        public int squarePadZeroes = 0;
-        public int squareBitSpace = 1;
-        public int remainingGuesses;
-        public bool isSquareDecimal, isSquareInteger;
+        BigInteger internalSquareNum;
+        int squareDecimalPlace = 0;
+        int squarePadZeroes = 0;
+        int squareBitSpace = 1;
+        int remainingGuesses;
+        bool isSquareDecimal, isSquareInteger;
 
         public string SquareRootOf(string number, int rootDecimalPrecision)
         {
@@ -226,31 +226,30 @@ namespace NumericPrecisionLib
             return localResult;
         }
 
-        public void ParseSquareInputs(string number, int decimalPrecision)
+        private void ParseSquareInputs(string number, int decimalPrecision)
         {
             ValidateSquareString(number);
             DetermineSquareDecimalPlaces(number, decimalPrecision);
             PadRootDecimal(number);
         }
 
-        public void ValidateSquareString(string number)
+        private void ValidateSquareString(string number)
         {
             isSquareDecimal = IsDecimal(number);
             isSquareInteger = IsInteger(number);
         }
 
-        public void DetermineSquareDecimalPlaces(string number, int decimalPrecision)
+        private void DetermineSquareDecimalPlaces(string number, int decimalPrecision)
         {
             if (isSquareDecimal == true && isSquareInteger == false)
                 squarePadZeroes = (2 * decimalPrecision) - (number.Length - (number.IndexOf('.') + 1));
-
             else if (isSquareInteger == true)
                 squarePadZeroes = 2 * decimalPrecision;
 
             squareDecimalPlace = 2 * decimalPrecision;
         }
 
-        public void PadRootDecimal(string number)
+        private void PadRootDecimal(string number)
         {
             string localResult = number;
 
@@ -264,7 +263,7 @@ namespace NumericPrecisionLib
             internalSquareNum = BigInteger.Parse(localResult);
         }
 
-        public void FindSquareBitSpace(BigInteger targetValue)
+        private void FindSquareBitSpace(BigInteger targetValue)
         {
             BigInteger squareBitSpaceTest = 0;
 
@@ -277,7 +276,7 @@ namespace NumericPrecisionLib
             remainingGuesses = squareBitSpace;
         }
 
-        public BigInteger GuessSquareRootOf(BigInteger number)
+        private BigInteger GuessSquareRootOf(BigInteger number)
         {
             BigInteger guess = 0;
             BigInteger squareRoot = 0;
