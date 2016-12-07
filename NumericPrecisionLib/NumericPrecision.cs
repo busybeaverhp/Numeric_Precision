@@ -9,6 +9,8 @@ namespace NumericPrecisionLib
 {
     public class NumericPrecision
     {
+        public NumericPrecision() { }
+
         #region ELEMENTARY OPERATIONS
 
         BigInteger internalNum1;
@@ -39,7 +41,6 @@ namespace NumericPrecisionLib
                 localResult = localResult.Insert((localResult.Length - greaterDecimalPlace), ".");
                 localResult = "-" + localResult.PadLeft(padLength, '0');
             }
-
             else
                 localResult = localResult.Insert((localResult.Length - greaterDecimalPlace), ".");
 
@@ -63,7 +64,6 @@ namespace NumericPrecisionLib
                 localResult = localResult.Insert((localResult.Length - greaterDecimalPlace), ".");
                 localResult = "-" + localResult.PadLeft(padLength, '0');
             }
-
             else
                 localResult = localResult.Insert((localResult.Length - greaterDecimalPlace), ".");
 
@@ -85,7 +85,6 @@ namespace NumericPrecisionLib
                 localResult = localResult.Insert((localResult.Length - productDecimalPlace), ".");
                 localResult = "-" + localResult;
             }
-
             else
                 localResult = localResult.Insert((localResult.Length - productDecimalPlace), ".");
 
@@ -156,7 +155,6 @@ namespace NumericPrecisionLib
         {
             if (isNum1Decimal == true && isNum1Integer == false)
                 num1DecimalPlace = number1.Length - (number1.IndexOf('.') + 1);
-
             if (isNum2Decimal == true && isNum2Integer == false)
                 num2DecimalPlace = number2.Length - (number2.IndexOf('.') + 1);
 
@@ -181,20 +179,11 @@ namespace NumericPrecisionLib
                 localNumber2 = localNumber2.Replace(".", "");
 
                 if (num1DecimalPlace > num2DecimalPlace)
-                {
                     for (int i = 0; i < (num1DecimalPlace - num2DecimalPlace); i++)
-                    {
                         localNumber2 += "0";
-                    }
-                }
-
                 else if (num1DecimalPlace < num2DecimalPlace)
-                {
                     for (int i = 0; i < (num2DecimalPlace - num1DecimalPlace); i++)
-                    {
                         localNumber1 += "0";
-                    }
-                }
             }
 
             internalNum1 = BigInteger.Parse(localNumber1);
@@ -320,6 +309,19 @@ namespace NumericPrecisionLib
             }
 
             return squareRoot;
+        }
+
+        #endregion
+
+        #region FACTORIALS
+
+        public BigInteger Factorial(int integer)
+        {
+            BigInteger result = 1;
+
+            for (int i = 1; i <= integer; i++)
+                result *= i;
+            return result;
         }
 
         #endregion

@@ -1,0 +1,5 @@
+E:\Documents\GitHub\Numeric_Precision\NumericPrecisionLib\bin\Debug\NumericPrecisionLib.dll
+E:\Documents\GitHub\Numeric_Precision\NumericPrecisionLib\bin\Debug\NumericPrecisionLib.pdb
+E:\Documents\GitHub\Numeric_Precision\NumericPrecisionLib\obj\Debug\NumericPrecisionLib.csprojResolveAssemblyReference.cache
+E:\Documents\GitHub\Numeric_Precision\NumericPrecisionLib\obj\Debug\NumericPrecisionLib.dll
+E:\Documents\GitHub\Numeric_Precision\NumericPrecisionLib\obj\Debug\NumericPrecisionLib.pdb

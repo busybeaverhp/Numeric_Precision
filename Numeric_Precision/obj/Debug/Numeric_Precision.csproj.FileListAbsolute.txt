@@ -7,3 +7,14 @@ E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.Pro
 E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.csproj.GenerateResource.Cache
 E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.exe
 E:\Documents\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.pdb
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\bin\Debug\Numeric_Precision.exe.config
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.exe
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.pdb
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\bin\Debug\Numeric_Precision.exe
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\bin\Debug\Numeric_Precision.pdb
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.csprojResolveAssemblyReference.cache
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.Demonstration.resources
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.Properties.Resources.resources
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\obj\Debug\Numeric_Precision.csproj.GenerateResource.Cache
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\bin\Debug\NumericPrecisionLib.dll
+E:\Documents\GitHub\Numeric_Precision\Numeric_Precision\bin\Debug\NumericPrecisionLib.pdb
